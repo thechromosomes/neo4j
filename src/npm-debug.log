@@ -1,0 +1,633 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'neo4j-driver@4',
+1 verbose cli   '--save' ]
+2 info using npm@3.5.2
+3 info using node@v8.10.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData neo4j-driver@4
+8 silly fetchNamedPackageData neo4j-driver
+9 silly mapToRegistry name neo4j-driver
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry uri https://registry.npmjs.org/neo4j-driver
+13 verbose request uri https://registry.npmjs.org/neo4j-driver
+14 verbose request no auth needed
+15 info attempt registry request try #1 at 10:33:32 AM
+16 verbose request id 47f5cd2aecec12ee
+17 verbose etag W/"1255afd687477bf3df7e87043c986af2"
+18 verbose lastModified Fri, 24 Feb 2023 15:10:54 GMT
+19 http request GET https://registry.npmjs.org/neo4j-driver
+20 http 304 https://registry.npmjs.org/neo4j-driver
+21 verbose headers { date: 'Mon, 27 Feb 2023 05:03:34 GMT',
+21 verbose headers   connection: 'keep-alive',
+21 verbose headers   'cf-ray': '79fe5fe5cd9233c0-DEL',
+21 verbose headers   'cache-control': 'public, max-age=300',
+21 verbose headers   etag: '"1255afd687477bf3df7e87043c986af2"',
+21 verbose headers   'last-modified': 'Fri, 24 Feb 2023 15:10:54 GMT',
+21 verbose headers   vary: 'Accept-Encoding',
+21 verbose headers   'cf-cache-status': 'REVALIDATED',
+21 verbose headers   'x-amz-replication-status': 'COMPLETED',
+21 verbose headers   'x-amz-server-side-encryption': 'AES256',
+21 verbose headers   server: 'cloudflare' }
+22 silly get cb [ 304,
+22 silly get   { date: 'Mon, 27 Feb 2023 05:03:34 GMT',
+22 silly get     connection: 'keep-alive',
+22 silly get     'cf-ray': '79fe5fe5cd9233c0-DEL',
+22 silly get     'cache-control': 'public, max-age=300',
+22 silly get     etag: '"1255afd687477bf3df7e87043c986af2"',
+22 silly get     'last-modified': 'Fri, 24 Feb 2023 15:10:54 GMT',
+22 silly get     vary: 'Accept-Encoding',
+22 silly get     'cf-cache-status': 'REVALIDATED',
+22 silly get     'x-amz-replication-status': 'COMPLETED',
+22 silly get     'x-amz-server-side-encryption': 'AES256',
+22 silly get     server: 'cloudflare' } ]
+23 verbose etag https://registry.npmjs.org/neo4j-driver from cache
+24 verbose get saving neo4j-driver to /home/sagar/.npm/registry.npmjs.org/neo4j-driver/.cache.json
+25 silly install normalizeTree
+26 silly loadCurrentTree Finishing
+27 silly loadIdealTree Starting
+28 silly install loadIdealTree
+29 silly cloneCurrentTree Starting
+30 silly install cloneCurrentTreeToIdealTree
+31 silly cloneCurrentTree Finishing
+32 silly loadShrinkwrap Starting
+33 silly install loadShrinkwrap
+34 silly loadShrinkwrap Finishing
+35 silly loadAllDepsIntoIdealTree Starting
+36 silly install loadAllDepsIntoIdealTree
+37 silly resolveWithNewModule neo4j-driver@4.4.10 checking installable status
+38 silly cache add args [ 'neo4j-driver@4', null ]
+39 verbose cache add spec neo4j-driver@4
+40 silly cache add parsed spec Result {
+40 silly cache add   raw: 'neo4j-driver@4',
+40 silly cache add   scope: null,
+40 silly cache add   name: 'neo4j-driver',
+40 silly cache add   rawSpec: '4',
+40 silly cache add   spec: '>=4.0.0 <5.0.0',
+40 silly cache add   type: 'range' }
+41 silly addNamed neo4j-driver@>=4.0.0 <5.0.0
+42 verbose addNamed ">=4.0.0 <5.0.0" is a valid semver range for neo4j-driver
+43 silly addNameRange { name: 'neo4j-driver', range: '>=4.0.0 <5.0.0', hasData: false }
+44 silly mapToRegistry name neo4j-driver
+45 silly mapToRegistry using default registry
+46 silly mapToRegistry registry https://registry.npmjs.org/
+47 silly mapToRegistry uri https://registry.npmjs.org/neo4j-driver
+48 verbose addNameRange registry:https://registry.npmjs.org/neo4j-driver not in flight; fetching
+49 verbose get https://registry.npmjs.org/neo4j-driver not expired, no request
+50 silly addNameRange number 2 { name: 'neo4j-driver', range: '>=4.0.0 <5.0.0', hasData: true }
+51 silly addNameRange versions [ 'neo4j-driver',
+51 silly addNameRange   [ '0.0.2',
+51 silly addNameRange     '1.0.0-alpha.0',
+51 silly addNameRange     '1.0.0-alpha.1',
+51 silly addNameRange     '1.0.0-alpha.2',
+51 silly addNameRange     '1.0.0-alpha.3',
+51 silly addNameRange     '1.0.0-alpha4',
+51 silly addNameRange     '1.0.0-alpha5',
+51 silly addNameRange     '1.0.0-alpha6',
+51 silly addNameRange     '1.0.0-alpha7',
+51 silly addNameRange     '1.0.0-M01',
+51 silly addNameRange     '1.0.0-M02',
+51 silly addNameRange     '1.0.0-M03',
+51 silly addNameRange     '1.0.0-M04',
+51 silly addNameRange     '1.0.0-RC1',
+51 silly addNameRange     '1.0.0-RC2',
+51 silly addNameRange     '1.0.0',
+51 silly addNameRange     '1.0.1',
+51 silly addNameRange     '1.0.2',
+51 silly addNameRange     '1.0.3',
+51 silly addNameRange     '1.1.0-M01',
+51 silly addNameRange     '1.0.4',
+51 silly addNameRange     '1.1.0-M02',
+51 silly addNameRange     '1.1.0-M03',
+51 silly addNameRange     '1.0.5',
+51 silly addNameRange     '1.1.0-M04',
+51 silly addNameRange     '1.1.0-RC1',
+51 silly addNameRange     '1.1.0',
+51 silly addNameRange     '1.1.1',
+51 silly addNameRange     '1.2.0-rc1',
+51 silly addNameRange     '1.2.0',
+51 silly addNameRange     '1.3.0-beta01',
+51 silly addNameRange     '1.3.0',
+51 silly addNameRange     '1.4.0-beta01',
+51 silly addNameRange     '1.4.0-rc1',
+51 silly addNameRange     '1.4.0',
+51 silly addNameRange     '1.5.0-alpha01',
+51 silly addNameRange     '1.4.1',
+51 silly addNameRange     '1.5.0-beta01',
+51 silly addNameRange     '1.5.0-rc1',
+51 silly addNameRange     '1.5.0-rc2',
+51 silly addNameRange     '1.5.0',
+51 silly addNameRange     '1.5.1',
+51 silly addNameRange     '1.5.2',
+51 silly addNameRange     '1.5.3',
+51 silly addNameRange     '1.6.0-alpha01',
+51 silly addNameRange     '1.6.0-alpha02',
+51 silly addNameRange     '1.6.0-beta01',
+51 silly addNameRange     '1.6.0-rc1',
+51 silly addNameRange     '1.6.0',
+51 silly addNameRange     '1.6.1',
+51 silly addNameRange     '1.7.0-alpha01',
+51 silly addNameRange     '1.6.2',
+51 silly addNameRange     '1.7.0-alpha02',
+51 silly addNameRange     '1.6.3',
+51 silly addNameRange     '1.7.0-alpha03',
+51 silly addNameRange     '1.7.0-beta01',
+51 silly addNameRange     '1.7.0-beta02',
+51 silly addNameRange     '1.7.0-rc1',
+51 silly addNameRange     '1.7.0-rc2',
+51 silly addNameRange     '1.7.0',
+51 silly addNameRange     '1.6.4',
+51 silly addNameRange     '1.7.1',
+51 silly addNameRange     '1.7.2',
+51 silly addNameRange     '1.7.3',
+51 silly addNameRange     '2.0.0-alpha01',
+51 silly addNameRange     '1.7.4',
+51 silly addNameRange     '2.0.0-alpha02',
+51 silly addNameRange     '1.7.5',
+51 silly addNameRange     '2.0.0-alpha03',
+51 silly addNameRange     '1.7.6',
+51 silly addNameRange     '4.0.0-alpha04',
+51 silly addNameRange     '4.0.0-beta01',
+51 silly addNameRange     '4.0.0-rc1',
+51 silly addNameRange     '4.0.0',
+51 silly addNameRange     '4.0.1',
+51 silly addNameRange     '4.0.2',
+51 silly addNameRange     '4.1.0-beta01',
+51 silly addNameRange     '4.1.0',
+51 silly addNameRange     '4.1.1',
+51 silly addNameRange     '1.7.7',
+51 silly addNameRange     '4.0.3',
+51 silly addNameRange     '4.1.2',
+51 silly addNameRange     '4.2.0-alpha01',
+51 silly addNameRange     '4.2.0',
+51 silly addNameRange     '4.2.1',
+51 silly addNameRange     '4.2.2',
+51 silly addNameRange     '4.2.3',
+51 silly addNameRange     '1.7.8',
+51 silly addNameRange     '4.3.0-alpha01',
+51 silly addNameRange     '4.3.0-alpha02',
+51 silly addNameRange     '4.3.0-beta01',
+51 silly addNameRange     '4.3.0-rc01',
+51 silly addNameRange     '4.3.0-rc02',
+51 silly addNameRange     '4.3.0-rc03',
+51 silly addNameRange     '4.3.0',
+51 silly addNameRange     '4.3.1',
+51 silly addNameRange     '4.3.2',
+51 silly addNameRange     '4.3.3',
+51 silly addNameRange     '4.3.4',
+51 silly addNameRange     '4.4.0-alpha01',
+51 silly addNameRange     ... 28 more items ] ]
+52 silly addNamed neo4j-driver@4.4.10
+53 verbose addNamed "4.4.10" is a plain semver version for neo4j-driver
+54 silly cache afterAdd neo4j-driver@4.4.10
+55 verbose afterAdd /home/sagar/.npm/neo4j-driver/4.4.10/package/package.json not in flight; writing
+56 verbose afterAdd /home/sagar/.npm/neo4j-driver/4.4.10/package/package.json written
+57 silly fetchNamedPackageData @babel/runtime
+58 silly mapToRegistry name @babel/runtime
+59 silly mapToRegistry scope (from package name) @babel
+60 verbose mapToRegistry no registry URL found in name for scope @babel
+61 silly mapToRegistry using default registry
+62 silly mapToRegistry registry https://registry.npmjs.org/
+63 silly mapToRegistry uri https://registry.npmjs.org/@babel%2fruntime
+64 silly fetchNamedPackageData neo4j-driver-bolt-connection
+65 silly mapToRegistry name neo4j-driver-bolt-connection
+66 silly mapToRegistry using default registry
+67 silly mapToRegistry registry https://registry.npmjs.org/
+68 silly mapToRegistry uri https://registry.npmjs.org/neo4j-driver-bolt-connection
+69 silly fetchNamedPackageData neo4j-driver-core
+70 silly mapToRegistry name neo4j-driver-core
+71 silly mapToRegistry using default registry
+72 silly mapToRegistry registry https://registry.npmjs.org/
+73 silly mapToRegistry uri https://registry.npmjs.org/neo4j-driver-core
+74 silly fetchNamedPackageData rxjs
+75 silly mapToRegistry name rxjs
+76 silly mapToRegistry using default registry
+77 silly mapToRegistry registry https://registry.npmjs.org/
+78 silly mapToRegistry uri https://registry.npmjs.org/rxjs
+79 verbose request uri https://registry.npmjs.org/@babel%2fruntime
+80 verbose request no auth needed
+81 info attempt registry request try #1 at 10:33:34 AM
+82 verbose etag W/"734cd84a33dbb477c85b8f4c5dbcbc76"
+83 verbose lastModified Mon, 20 Feb 2023 15:31:04 GMT
+84 http request GET https://registry.npmjs.org/@babel%2fruntime
+85 verbose request uri https://registry.npmjs.org/neo4j-driver-core
+86 verbose request no auth needed
+87 info attempt registry request try #1 at 10:33:34 AM
+88 verbose etag W/"e45f5e15f423bc19ba401e04a8b456a9"
+89 verbose lastModified Fri, 24 Feb 2023 15:10:49 GMT
+90 http request GET https://registry.npmjs.org/neo4j-driver-core
+91 verbose request uri https://registry.npmjs.org/neo4j-driver-bolt-connection
+92 verbose request no auth needed
+93 info attempt registry request try #1 at 10:33:34 AM
+94 verbose etag W/"19be176601d39a7db5aaa49d3687b660"
+95 verbose lastModified Fri, 24 Feb 2023 15:10:50 GMT
+96 http request GET https://registry.npmjs.org/neo4j-driver-bolt-connection
+97 verbose request uri https://registry.npmjs.org/rxjs
+98 verbose request no auth needed
+99 info attempt registry request try #1 at 10:33:34 AM
+100 verbose etag W/"d4be173f4bfddc3deadcf1093d106e22"
+101 verbose lastModified Sat, 04 Feb 2023 05:33:13 GMT
+102 http request GET https://registry.npmjs.org/rxjs
+103 http 304 https://registry.npmjs.org/neo4j-driver-core
+104 verbose headers { date: 'Mon, 27 Feb 2023 05:03:34 GMT',
+104 verbose headers   connection: 'keep-alive',
+104 verbose headers   'cf-ray': '79fe5ff069b933cc-DEL',
+104 verbose headers   age: '31',
+104 verbose headers   'cache-control': 'public, max-age=300',
+104 verbose headers   etag: '"e45f5e15f423bc19ba401e04a8b456a9"',
+104 verbose headers   'last-modified': 'Fri, 24 Feb 2023 15:10:49 GMT',
+104 verbose headers   vary: 'Accept-Encoding',
+104 verbose headers   'cf-cache-status': 'HIT',
+104 verbose headers   'x-amz-replication-status': 'COMPLETED',
+104 verbose headers   'x-amz-server-side-encryption': 'AES256',
+104 verbose headers   server: 'cloudflare' }
+105 silly get cb [ 304,
+105 silly get   { date: 'Mon, 27 Feb 2023 05:03:34 GMT',
+105 silly get     connection: 'keep-alive',
+105 silly get     'cf-ray': '79fe5ff069b933cc-DEL',
+105 silly get     age: '31',
+105 silly get     'cache-control': 'public, max-age=300',
+105 silly get     etag: '"e45f5e15f423bc19ba401e04a8b456a9"',
+105 silly get     'last-modified': 'Fri, 24 Feb 2023 15:10:49 GMT',
+105 silly get     vary: 'Accept-Encoding',
+105 silly get     'cf-cache-status': 'HIT',
+105 silly get     'x-amz-replication-status': 'COMPLETED',
+105 silly get     'x-amz-server-side-encryption': 'AES256',
+105 silly get     server: 'cloudflare' } ]
+106 verbose etag https://registry.npmjs.org/neo4j-driver-core from cache
+107 verbose get saving neo4j-driver-core to /home/sagar/.npm/registry.npmjs.org/neo4j-driver-core/.cache.json
+108 silly resolveWithNewModule neo4j-driver-core@4.4.10 checking installable status
+109 silly cache add args [ 'neo4j-driver-core@^4.4.10', null ]
+110 verbose cache add spec neo4j-driver-core@^4.4.10
+111 silly cache add parsed spec Result {
+111 silly cache add   raw: 'neo4j-driver-core@^4.4.10',
+111 silly cache add   scope: null,
+111 silly cache add   name: 'neo4j-driver-core',
+111 silly cache add   rawSpec: '^4.4.10',
+111 silly cache add   spec: '>=4.4.10 <5.0.0',
+111 silly cache add   type: 'range' }
+112 silly addNamed neo4j-driver-core@>=4.4.10 <5.0.0
+113 verbose addNamed ">=4.4.10 <5.0.0" is a valid semver range for neo4j-driver-core
+114 silly addNameRange { name: 'neo4j-driver-core',
+114 silly addNameRange   range: '>=4.4.10 <5.0.0',
+114 silly addNameRange   hasData: false }
+115 silly mapToRegistry name neo4j-driver-core
+116 silly mapToRegistry using default registry
+117 silly mapToRegistry registry https://registry.npmjs.org/
+118 silly mapToRegistry uri https://registry.npmjs.org/neo4j-driver-core
+119 verbose addNameRange registry:https://registry.npmjs.org/neo4j-driver-core not in flight; fetching
+120 verbose get https://registry.npmjs.org/neo4j-driver-core not expired, no request
+121 silly addNameRange number 2 { name: 'neo4j-driver-core',
+121 silly addNameRange   range: '>=4.4.10 <5.0.0',
+121 silly addNameRange   hasData: true }
+122 silly addNameRange versions [ 'neo4j-driver-core',
+122 silly addNameRange   [ '4.3.0-rc02',
+122 silly addNameRange     '4.3.0-rc03',
+122 silly addNameRange     '4.3.0',
+122 silly addNameRange     '4.3.1',
+122 silly addNameRange     '4.3.2',
+122 silly addNameRange     '4.3.3',
+122 silly addNameRange     '4.3.4',
+122 silly addNameRange     '4.4.0-alpha01',
+122 silly addNameRange     '4.4.0-beta01',
+122 silly addNameRange     '4.4.0-beta02',
+122 silly addNameRange     '4.3.5',
+122 silly addNameRange     '4.3.6',
+122 silly addNameRange     '4.4.0',
+122 silly addNameRange     '4.4.1',
+122 silly addNameRange     '4.4.2',
+122 silly addNameRange     '4.4.3',
+122 silly addNameRange     '5.0.0-alpha01',
+122 silly addNameRange     '4.4.4',
+122 silly addNameRange     '4.4.5',
+122 silly addNameRange     '4.4.6',
+122 silly addNameRange     '4.4.7',
+122 silly addNameRange     '5.0.0-alpha02',
+122 silly addNameRange     '4.4.8',
+122 silly addNameRange     '5.0.0-beta01',
+122 silly addNameRange     '5.0.0',
+122 silly addNameRange     '4.4.9',
+122 silly addNameRange     '5.0.1',
+122 silly addNameRange     '4.4.10',
+122 silly addNameRange     '5.1.0',
+122 silly addNameRange     '5.2.0',
+122 silly addNameRange     '5.3.0',
+122 silly addNameRange     '3.4.0-alpha01',
+122 silly addNameRange     '5.4.0-alpha01',
+122 silly addNameRange     '5.4.0',
+122 silly addNameRange     '5.5.0',
+122 silly addNameRange     '5.6.0' ] ]
+123 silly addNamed neo4j-driver-core@4.4.10
+124 verbose addNamed "4.4.10" is a plain semver version for neo4j-driver-core
+125 http 304 https://registry.npmjs.org/neo4j-driver-bolt-connection
+126 verbose headers { date: 'Mon, 27 Feb 2023 05:03:34 GMT',
+126 verbose headers   connection: 'keep-alive',
+126 verbose headers   'cf-ray': '79fe5ff08bdf8ad5-DEL',
+126 verbose headers   age: '17',
+126 verbose headers   'cache-control': 'public, max-age=300',
+126 verbose headers   etag: '"19be176601d39a7db5aaa49d3687b660"',
+126 verbose headers   'last-modified': 'Fri, 24 Feb 2023 15:10:50 GMT',
+126 verbose headers   vary: 'Accept-Encoding',
+126 verbose headers   'cf-cache-status': 'HIT',
+126 verbose headers   'x-amz-replication-status': 'COMPLETED',
+126 verbose headers   'x-amz-server-side-encryption': 'AES256',
+126 verbose headers   server: 'cloudflare' }
+127 silly get cb [ 304,
+127 silly get   { date: 'Mon, 27 Feb 2023 05:03:34 GMT',
+127 silly get     connection: 'keep-alive',
+127 silly get     'cf-ray': '79fe5ff08bdf8ad5-DEL',
+127 silly get     age: '17',
+127 silly get     'cache-control': 'public, max-age=300',
+127 silly get     etag: '"19be176601d39a7db5aaa49d3687b660"',
+127 silly get     'last-modified': 'Fri, 24 Feb 2023 15:10:50 GMT',
+127 silly get     vary: 'Accept-Encoding',
+127 silly get     'cf-cache-status': 'HIT',
+127 silly get     'x-amz-replication-status': 'COMPLETED',
+127 silly get     'x-amz-server-side-encryption': 'AES256',
+127 silly get     server: 'cloudflare' } ]
+128 verbose etag https://registry.npmjs.org/neo4j-driver-bolt-connection from cache
+129 verbose get saving neo4j-driver-bolt-connection to /home/sagar/.npm/registry.npmjs.org/neo4j-driver-bolt-connection/.cache.json
+130 silly cache afterAdd neo4j-driver-core@4.4.10
+131 verbose afterAdd /home/sagar/.npm/neo4j-driver-core/4.4.10/package/package.json not in flight; writing
+132 verbose afterAdd /home/sagar/.npm/neo4j-driver-core/4.4.10/package/package.json written
+133 silly resolveWithNewModule neo4j-driver-bolt-connection@4.4.10 checking installable status
+134 silly cache add args [ 'neo4j-driver-bolt-connection@^4.4.10', null ]
+135 verbose cache add spec neo4j-driver-bolt-connection@^4.4.10
+136 silly cache add parsed spec Result {
+136 silly cache add   raw: 'neo4j-driver-bolt-connection@^4.4.10',
+136 silly cache add   scope: null,
+136 silly cache add   name: 'neo4j-driver-bolt-connection',
+136 silly cache add   rawSpec: '^4.4.10',
+136 silly cache add   spec: '>=4.4.10 <5.0.0',
+136 silly cache add   type: 'range' }
+137 silly addNamed neo4j-driver-bolt-connection@>=4.4.10 <5.0.0
+138 verbose addNamed ">=4.4.10 <5.0.0" is a valid semver range for neo4j-driver-bolt-connection
+139 silly addNameRange { name: 'neo4j-driver-bolt-connection',
+139 silly addNameRange   range: '>=4.4.10 <5.0.0',
+139 silly addNameRange   hasData: false }
+140 silly mapToRegistry name neo4j-driver-bolt-connection
+141 silly mapToRegistry using default registry
+142 silly mapToRegistry registry https://registry.npmjs.org/
+143 silly mapToRegistry uri https://registry.npmjs.org/neo4j-driver-bolt-connection
+144 verbose addNameRange registry:https://registry.npmjs.org/neo4j-driver-bolt-connection not in flight; fetching
+145 verbose get https://registry.npmjs.org/neo4j-driver-bolt-connection not expired, no request
+146 silly addNameRange number 2 { name: 'neo4j-driver-bolt-connection',
+146 silly addNameRange   range: '>=4.4.10 <5.0.0',
+146 silly addNameRange   hasData: true }
+147 silly addNameRange versions [ 'neo4j-driver-bolt-connection',
+147 silly addNameRange   [ '4.3.0-rc02',
+147 silly addNameRange     '4.3.0-rc03',
+147 silly addNameRange     '4.3.0',
+147 silly addNameRange     '4.3.1',
+147 silly addNameRange     '4.3.2',
+147 silly addNameRange     '4.3.3',
+147 silly addNameRange     '4.3.4',
+147 silly addNameRange     '4.4.0-alpha01',
+147 silly addNameRange     '4.4.0-beta01',
+147 silly addNameRange     '4.4.0-beta02',
+147 silly addNameRange     '4.3.5',
+147 silly addNameRange     '4.3.6',
+147 silly addNameRange     '4.4.0',
+147 silly addNameRange     '4.4.1',
+147 silly addNameRange     '4.4.2',
+147 silly addNameRange     '4.4.3',
+147 silly addNameRange     '5.0.0-alpha01',
+147 silly addNameRange     '4.4.4',
+147 silly addNameRange     '4.4.5',
+147 silly addNameRange     '4.4.6',
+147 silly addNameRange     '4.4.7',
+147 silly addNameRange     '5.0.0-alpha02',
+147 silly addNameRange     '4.4.8',
+147 silly addNameRange     '5.0.0-beta01',
+147 silly addNameRange     '5.0.0',
+147 silly addNameRange     '4.4.9',
+147 silly addNameRange     '5.0.1',
+147 silly addNameRange     '4.4.10',
+147 silly addNameRange     '5.1.0',
+147 silly addNameRange     '5.2.0',
+147 silly addNameRange     '5.3.0',
+147 silly addNameRange     '3.4.0-alpha01',
+147 silly addNameRange     '5.4.0-alpha01',
+147 silly addNameRange     '5.4.0',
+147 silly addNameRange     '5.5.0',
+147 silly addNameRange     '5.6.0' ] ]
+148 silly addNamed neo4j-driver-bolt-connection@4.4.10
+149 verbose addNamed "4.4.10" is a plain semver version for neo4j-driver-bolt-connection
+150 http 304 https://registry.npmjs.org/rxjs
+151 verbose headers { date: 'Mon, 27 Feb 2023 05:03:34 GMT',
+151 verbose headers   connection: 'keep-alive',
+151 verbose headers   'cf-ray': '79fe5ff09c9b1b92-DEL',
+151 verbose headers   age: '127',
+151 verbose headers   'cache-control': 'public, max-age=300',
+151 verbose headers   etag: '"d4be173f4bfddc3deadcf1093d106e22"',
+151 verbose headers   'last-modified': 'Sat, 04 Feb 2023 05:33:13 GMT',
+151 verbose headers   vary: 'Accept-Encoding',
+151 verbose headers   'cf-cache-status': 'HIT',
+151 verbose headers   'x-amz-replication-status': 'PENDING',
+151 verbose headers   server: 'cloudflare' }
+152 silly get cb [ 304,
+152 silly get   { date: 'Mon, 27 Feb 2023 05:03:34 GMT',
+152 silly get     connection: 'keep-alive',
+152 silly get     'cf-ray': '79fe5ff09c9b1b92-DEL',
+152 silly get     age: '127',
+152 silly get     'cache-control': 'public, max-age=300',
+152 silly get     etag: '"d4be173f4bfddc3deadcf1093d106e22"',
+152 silly get     'last-modified': 'Sat, 04 Feb 2023 05:33:13 GMT',
+152 silly get     vary: 'Accept-Encoding',
+152 silly get     'cf-cache-status': 'HIT',
+152 silly get     'x-amz-replication-status': 'PENDING',
+152 silly get     server: 'cloudflare' } ]
+153 verbose etag https://registry.npmjs.org/rxjs from cache
+154 verbose get saving rxjs to /home/sagar/.npm/registry.npmjs.org/rxjs/.cache.json
+155 silly cache afterAdd neo4j-driver-bolt-connection@4.4.10
+156 verbose afterAdd /home/sagar/.npm/neo4j-driver-bolt-connection/4.4.10/package/package.json not in flight; writing
+157 silly resolveWithNewModule rxjs@6.6.7 checking installable status
+158 silly cache add args [ 'rxjs@^6.6.3', null ]
+159 verbose cache add spec rxjs@^6.6.3
+160 silly cache add parsed spec Result {
+160 silly cache add   raw: 'rxjs@^6.6.3',
+160 silly cache add   scope: null,
+160 silly cache add   name: 'rxjs',
+160 silly cache add   rawSpec: '^6.6.3',
+160 silly cache add   spec: '>=6.6.3 <7.0.0',
+160 silly cache add   type: 'range' }
+161 silly addNamed rxjs@>=6.6.3 <7.0.0
+162 verbose addNamed ">=6.6.3 <7.0.0" is a valid semver range for rxjs
+163 silly addNameRange { name: 'rxjs', range: '>=6.6.3 <7.0.0', hasData: false }
+164 silly mapToRegistry name rxjs
+165 silly mapToRegistry using default registry
+166 silly mapToRegistry registry https://registry.npmjs.org/
+167 silly mapToRegistry uri https://registry.npmjs.org/rxjs
+168 verbose addNameRange registry:https://registry.npmjs.org/rxjs not in flight; fetching
+169 verbose afterAdd /home/sagar/.npm/neo4j-driver-bolt-connection/4.4.10/package/package.json written
+170 http 304 https://registry.npmjs.org/@babel%2fruntime
+171 verbose headers { date: 'Mon, 27 Feb 2023 05:03:34 GMT',
+171 verbose headers   connection: 'keep-alive',
+171 verbose headers   'cf-ray': '79fe5ff00ff633c0-DEL',
+171 verbose headers   'cache-control': 'public, max-age=300',
+171 verbose headers   etag: '"734cd84a33dbb477c85b8f4c5dbcbc76"',
+171 verbose headers   'last-modified': 'Mon, 20 Feb 2023 15:31:04 GMT',
+171 verbose headers   vary: 'Accept-Encoding',
+171 verbose headers   'cf-cache-status': 'HIT',
+171 verbose headers   'x-amz-replication-status': 'COMPLETED',
+171 verbose headers   'x-amz-server-side-encryption': 'AES256',
+171 verbose headers   server: 'cloudflare' }
+172 silly get cb [ 304,
+172 silly get   { date: 'Mon, 27 Feb 2023 05:03:34 GMT',
+172 silly get     connection: 'keep-alive',
+172 silly get     'cf-ray': '79fe5ff00ff633c0-DEL',
+172 silly get     'cache-control': 'public, max-age=300',
+172 silly get     etag: '"734cd84a33dbb477c85b8f4c5dbcbc76"',
+172 silly get     'last-modified': 'Mon, 20 Feb 2023 15:31:04 GMT',
+172 silly get     vary: 'Accept-Encoding',
+172 silly get     'cf-cache-status': 'HIT',
+172 silly get     'x-amz-replication-status': 'COMPLETED',
+172 silly get     'x-amz-server-side-encryption': 'AES256',
+172 silly get     server: 'cloudflare' } ]
+173 verbose etag https://registry.npmjs.org/@babel%2fruntime from cache
+174 verbose get saving @babel/runtime to /home/sagar/.npm/registry.npmjs.org/_40babel_252fruntime/.cache.json
+175 verbose get https://registry.npmjs.org/rxjs not expired, no request
+176 silly addNameRange number 2 { name: 'rxjs', range: '>=6.6.3 <7.0.0', hasData: true }
+177 silly addNameRange versions [ 'rxjs',
+177 silly addNameRange   [ '5.0.0-alpha.10',
+177 silly addNameRange     '5.0.0-alpha.11',
+177 silly addNameRange     '5.0.0-alpha.12',
+177 silly addNameRange     '5.0.0-alpha.13',
+177 silly addNameRange     '5.0.0-alpha.14',
+177 silly addNameRange     '5.0.0-beta.0',
+177 silly addNameRange     '5.0.0-beta.1',
+177 silly addNameRange     '5.0.0-beta.2',
+177 silly addNameRange     '5.0.0-beta.3',
+177 silly addNameRange     '5.0.0-beta.4',
+177 silly addNameRange     '5.0.0-beta.5',
+177 silly addNameRange     '5.0.0-beta.6',
+177 silly addNameRange     '5.0.0-beta.7',
+177 silly addNameRange     '5.0.0-beta.8',
+177 silly addNameRange     '5.0.0-beta.9',
+177 silly addNameRange     '5.0.0-beta.10',
+177 silly addNameRange     '5.0.0-beta.11',
+177 silly addNameRange     '5.0.0-beta.12',
+177 silly addNameRange     '5.0.0-rc.1',
+177 silly addNameRange     '5.0.0-rc.2',
+177 silly addNameRange     '5.0.0-rc.3',
+177 silly addNameRange     '5.0.0-rc.4',
+177 silly addNameRange     '5.0.0-rc.5',
+177 silly addNameRange     '5.0.0',
+177 silly addNameRange     '5.0.1',
+177 silly addNameRange     '5.0.2',
+177 silly addNameRange     '5.0.3',
+177 silly addNameRange     '5.1.0',
+177 silly addNameRange     '5.1.1',
+177 silly addNameRange     '5.2.0',
+177 silly addNameRange     '5.2.1-smooth',
+177 silly addNameRange     '5.3.0',
+177 silly addNameRange     '5.3.1',
+177 silly addNameRange     '5.3.3',
+177 silly addNameRange     '5.4.0',
+177 silly addNameRange     '5.4.1',
+177 silly addNameRange     '6.0.0-alpha.0',
+177 silly addNameRange     '5.4.2',
+177 silly addNameRange     '5.4.3',
+177 silly addNameRange     '5.5.0-beta.0',
+177 silly addNameRange     '5.5.0-beta.1',
+177 silly addNameRange     '5.5.0-beta.2',
+177 silly addNameRange     '5.5.0-beta.3',
+177 silly addNameRange     '5.5.0-beta.4',
+177 silly addNameRange     '5.5.0-beta.5',
+177 silly addNameRange     '5.5.0-beta.7',
+177 silly addNameRange     '5.5.0',
+177 silly addNameRange     '5.5.1',
+177 silly addNameRange     '5.5.2',
+177 silly addNameRange     '5.5.3',
+177 silly addNameRange     '5.5.4',
+177 silly addNameRange     '5.5.5',
+177 silly addNameRange     '5.5.6',
+177 silly addNameRange     '6.0.0-alpha.1',
+177 silly addNameRange     '6.0.0-alpha.2',
+177 silly addNameRange     '6.0.0-alpha.3',
+177 silly addNameRange     '5.5.7',
+177 silly addNameRange     '6.0.0-alpha.4',
+177 silly addNameRange     '6.0.0-beta.0',
+177 silly addNameRange     '5.6.0-forward-compat.0',
+177 silly addNameRange     '6.0.0-beta.1',
+177 silly addNameRange     '6.0.0-beta.2',
+177 silly addNameRange     '5.6.0-forward-compat.1',
+177 silly addNameRange     '6.0.0-beta.3',
+177 silly addNameRange     '5.5.8',
+177 silly addNameRange     '5.6.0-forward-compat.2',
+177 silly addNameRange     '6.0.0-beta.4',
+177 silly addNameRange     '6.0.0-rc.0',
+177 silly addNameRange     '6.0.0-smoosh.0',
+177 silly addNameRange     '6.0.0-smoosh.1',
+177 silly addNameRange     '6.0.0-smoosh.2',
+177 silly addNameRange     '6.0.0-rc.1',
+177 silly addNameRange     '6.0.0-tactical-rc.1',
+177 silly addNameRange     '5.5.9',
+177 silly addNameRange     '5.6.0-forward-compat.3',
+177 silly addNameRange     '6.0.0-tenacious-rc.2',
+177 silly addNameRange     '6.0.0-terrific-rc.3',
+177 silly addNameRange     '6.0.0-turbo-rc.4',
+177 silly addNameRange     '5.5.10',
+177 silly addNameRange     '5.6.0-forward-compat.4',
+177 silly addNameRange     '6.0.0-uber-rc.5',
+177 silly addNameRange     '6.0.0-ucandoit-rc.6',
+177 silly addNameRange     '6.0.0-uncanny-rc.7',
+177 silly addNameRange     '6.0.0',
+177 silly addNameRange     '6.1.0',
+177 silly addNameRange     '6.2.0',
+177 silly addNameRange     '5.5.11',
+177 silly addNameRange     '5.6.0-forward-compat.5',
+177 silly addNameRange     '6.2.1',
+177 silly addNameRange     '6.2.2',
+177 silly addNameRange     '6.3.0',
+177 silly addNameRange     '5.5.12',
+177 silly addNameRange     '6.3.1',
+177 silly addNameRange     '6.3.2',
+177 silly addNameRange     '6.3.3',
+177 silly addNameRange     '6.4.0',
+177 silly addNameRange     '6.5.0',
+177 silly addNameRange     '6.5.1',
+177 silly addNameRange     '6.5.2',
+177 silly addNameRange     '6.5.3',
+177 silly addNameRange     ... 57 more items ] ]
+178 silly addNamed rxjs@6.6.7
+179 verbose addNamed "6.6.7" is a plain semver version for rxjs
+180 silly cache afterAdd rxjs@6.6.7
+181 verbose afterAdd /home/sagar/.npm/rxjs/6.6.7/package/package.json not in flight; writing
+182 verbose afterAdd /home/sagar/.npm/rxjs/6.6.7/package/package.json written
+183 verbose stack Error: Missing required argument #1
+183 verbose stack     at andLogAndFinish (/usr/share/npm/lib/fetch-package-metadata.js:31:3)
+183 verbose stack     at fetchPackageMetadata (/usr/share/npm/lib/fetch-package-metadata.js:51:22)
+183 verbose stack     at resolveWithNewModule (/usr/share/npm/lib/install/deps.js:456:12)
+183 verbose stack     at /usr/share/npm/lib/install/deps.js:457:7
+183 verbose stack     at /usr/share/npm/node_modules/iferr/index.js:13:50
+183 verbose stack     at /usr/share/npm/lib/fetch-package-metadata.js:37:12
+183 verbose stack     at addRequestedAndFinish (/usr/share/npm/lib/fetch-package-metadata.js:82:5)
+183 verbose stack     at returnAndAddMetadata (/usr/share/npm/lib/fetch-package-metadata.js:117:7)
+183 verbose stack     at pickVersionFromRegistryDocument (/usr/share/npm/lib/fetch-package-metadata.js:134:20)
+183 verbose stack     at /usr/share/npm/node_modules/iferr/index.js:13:50
+184 verbose cwd /home/sagar/Documents/ust_neo4j_backend/src
+185 error Linux 5.4.0-90-generic
+186 error argv "/usr/bin/node" "/usr/bin/npm" "install" "neo4j-driver@4" "--save"
+187 error node v8.10.0
+188 error npm  v3.5.2
+189 error code EMISSINGARG
+190 error typeerror Error: Missing required argument #1
+190 error typeerror     at andLogAndFinish (/usr/share/npm/lib/fetch-package-metadata.js:31:3)
+190 error typeerror     at fetchPackageMetadata (/usr/share/npm/lib/fetch-package-metadata.js:51:22)
+190 error typeerror     at resolveWithNewModule (/usr/share/npm/lib/install/deps.js:456:12)
+190 error typeerror     at /usr/share/npm/lib/install/deps.js:457:7
+190 error typeerror     at /usr/share/npm/node_modules/iferr/index.js:13:50
+190 error typeerror     at /usr/share/npm/lib/fetch-package-metadata.js:37:12
+190 error typeerror     at addRequestedAndFinish (/usr/share/npm/lib/fetch-package-metadata.js:82:5)
+190 error typeerror     at returnAndAddMetadata (/usr/share/npm/lib/fetch-package-metadata.js:117:7)
+190 error typeerror     at pickVersionFromRegistryDocument (/usr/share/npm/lib/fetch-package-metadata.js:134:20)
+190 error typeerror     at /usr/share/npm/node_modules/iferr/index.js:13:50
+191 error typeerror This is an error with npm itself. Please report this error at:
+191 error typeerror     <http://github.com/npm/npm/issues>
+192 verbose exit [ 1, true ]
