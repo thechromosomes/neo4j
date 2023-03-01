@@ -1,0 +1,12 @@
+{
+    "version": 2,
+    "name": "ust_neo4j_backend",
+    "builds": [{
+        "src": "main.js",
+        "use": "@vercel/node"
+    }],
+    "routes": [{
+        "src": "/(.*)",
+        "dest": "/app.js"
+    }]
+}
