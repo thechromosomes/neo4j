@@ -1,4 +1,4 @@
-# ![NEO4j Example App](project-logo.png)
+# ![NEO4j Example App]
 
 
 This codebase was created to demonstrate a fully fledged fullstack application built with a **Neo4j** database backed [Express.js](https://expressjs.com/) application including CRUD operations, authentication, routing, pagination, and more.
