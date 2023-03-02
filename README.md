@@ -1,9 +1,7 @@
 # ![NEO4j Example App]
 
 
-This codebase was created to demonstrate a fully fledged fullstack application built with a **Neo4j** database backed [Express.js](https://expressjs.com/) application including CRUD operations, authentication, routing, pagination, and more.
-
-We've gone to great lengths to adhere to the [Neo4j](https://neo4j.com) and [Nest.js](https://nestjs.com)  community styleguides & best practices.
+This codebase was created to demonstrate a fully fledged fullstack application built with a **Neo4j** database backed [Express.js](https://expressjs.com/) application including CRUD operations, routing, and more.
 
 
 # How it works
